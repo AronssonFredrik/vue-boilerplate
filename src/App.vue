@@ -15,3 +15,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+// import variables
+@import 'assets/style/_variables';
+
+h1{
+    color: $pink;
+}
+</style>

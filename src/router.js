@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import FirstPage from './assets/page/FirstPage.vue'
+import Index from './assets/page/Index.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -11,7 +11,7 @@ export default new Router({
     routes: [
         {
             path: '/',
-            component: FirstPage
+            component: Index
         }
     ]
 });  

@@ -12,35 +12,30 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
                     loaders: {
-                        css: ['vue-style-loader', { loader: 'css-loader' } ],
-                        js: [ 'babel-loader' ]
+                        css: ['vue-style-loader', {
+                            loader: 'css-loader'
+                        }],
+                        js: ['babel-loader']
                     },
                     cacheBusting: true
                 },
             },
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
-                include: [
-                    path.resolve('src'),
-                    path.resolve('node_modules/webpack-dev-server/client')
-                ]
+                loader: 'babel-loader'
             },
             {
-              test: /\.sass|scss$/,
-              use: [
-                'vue-style-loader',
-                'css-loader',
-                {
-                  loader: 'sass-loader',
-                },
-              ],
+                test: /\.css|sass|scss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     },
@@ -57,5 +52,5 @@ module.exports = {
         contentBase: path.resolve('src/assets'),
         watchContentBase: true
     },
-    plugins: [ new VueLoaderPlugin() ]
+    plugins: [new VueLoaderPlugin()]
 };
