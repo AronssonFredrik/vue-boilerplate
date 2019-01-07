@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-vue-route",
   "version": "1.0.0",
-  "description": "Boilerplate for Vue in webpack. Designed for inline css and use of routes.",
+  "description": "Boilerplate for Vue in webpack. Designed for inline scss and use of routes.",
   "scripts": {
     "serve": "webpack-dev-server",
     "build": "webpack --mode production",
@@ -11,12 +11,11 @@
   "author": "Fredrik Aronsson",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^1.0.1",
-    "npm": "^6.5.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "css-loader": "^1.0.1",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
