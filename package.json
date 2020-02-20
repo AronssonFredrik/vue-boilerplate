@@ -15,12 +15,12 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "css-loader": "^1.0.1",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "babel-preset-vue": "^2.0.2",
-    "node-sass": "^4.10.0",
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
